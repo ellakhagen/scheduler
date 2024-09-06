@@ -1,0 +1,3 @@
+{
+    "elhagen@calpoly.edu": ["MATH-241-03", "STAT-312-70", "CSC-484-01", "CSC-484-02", "PHIL-323-80"]
+}
