@@ -4,6 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.keys import Keys
 
 from PortalLogin import login
 import sys
@@ -92,52 +93,115 @@ def fetch_students(term, classes, username, password, method):
     
     actions = ActionChains(driver)
     #Make sure Term drop down matches the term the user is generating for
+    
     try:
         quarter_dropdown = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, f"//*[contains(text()='Term')]"))
+            EC.presence_of_element_located((By.XPATH, "//label[@title='Term']/following::input[1]"))
         )
         quarter_dropdown.click()
+    except:
+        print("quarter drop down did not work")
+        sys.exit()
+    
+    time.sleep(5)
 
+    try:
+        with open("quarters.txt", 'w') as file:
+            file.write(driver.page_source)
+            print("quarter text")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return None
+        
+    
+    try:
         quarter = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, f"//*[contains(text(), '{term}')]"))
-        )
+                EC.presence_of_element_located((By.XPATH, f"//input[@title='{term}']"))
+            )
         quarter.click()
     except:
-        print("Option not available")
+        print("q2 did not work")
         sys.exit()
+                
 
-    
     students = []
     for class_nbr in classes:
         #select the class nbr dropdown, for each class, get all students enrolled
-        try:
-            class_dropdown = WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, "//*[contains(text(),'Class Nbr')]"))
-            )            
-            time.sleep(3)
-            actions.move_to_element(class_dropdown).click().send_keys(class_nbr).perform()
-            time.sleep(3)
-            try:
-                with open("class_dropdown.txt", 'w') as file:
-                    file.write(driver.page_source)
-                    print("class drop down")
-            except Exception as e:
-                print(f"An error occurred: {e}")
-                return None
-            class_opt = WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, f"//*[contains(text(), '{class_nbr}']"))
-            )
-            class_opt.click()
-            time.sleep(10)
-        except:
-            print("Option not available")
-            sys.exit()
+        subject, nbr, section = class_nbr.split('-')
 
-        #More filters
-        more_filters = WebDriverWait(driver, 10).until(
-            EC.visibility_of_element_located((By.XPATH, "//*[contains(text(), 'Apply')]"))
-        )
-        more_filters.click()
+        try:
+            subject_dropdown = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, "//label[@title='Subject']/following::input[1]"))
+            ) 
+            subject_dropdown.click()
+            print("subject dropdown found")
+        except:
+            print("subject drop down did not work")   
+            sys.exit()        
+        
+        time.sleep(5)
+        try:
+            with open("class_dropdown.txt", 'w') as file:
+                file.write(driver.page_source)
+                print("class drop down")
+        except Exception as e:
+            print(f"An error occurred: {e}")
+            return None
+        
+        actions.move_to_element(subject_dropdown).click().send_keys(subject).send_keys(Keys.ENTER).perform()
+        
+        try:
+            nbr_dropdown = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, "//label[@title='Catalog Nbr']/following::input[1]"))
+            ) 
+            nbr_dropdown.click()
+            print("nbr dropdown found")
+        except:
+            print("nbr dropdown did not work")   
+            sys.exit()        
+        
+        time.sleep(5)
+        try:
+            with open("nbr_dropdown.txt", 'w') as file:
+                file.write(driver.page_source)
+                print("nbr drop down")
+        except Exception as e:
+            print(f"An error occurred: {e}")
+            return None
+        
+        actions.move_to_element(subject_dropdown).click().send_keys(nbr).send_keys(Keys.ENTER).perform()
+
+        try:
+            section_dropdown = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, "//label[@title='Section']/following::input[1]"))
+            ) 
+            section_dropdown.click()
+            print("section dropdown found")
+        except:
+            print("section dropdown did not work")   
+            sys.exit()        
+        
+        time.sleep(5)
+        try:
+            with open("section_dropdown.txt", 'w') as file:
+                file.write(driver.page_source)
+                print("section drop down")
+        except Exception as e:
+            print(f"An error occurred: {e}")
+            return None
+        
+        actions.move_to_element(section_dropdown).click().send_keys(section).send_keys(Keys.ENTER).perform()
+
+        apply_button = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, "'//input[@value='Apply']'"))
+            ) 
+        apply_button.click()
+        
+
+        time.sleep(10)
+
+
+        
 
     
     return set(students)

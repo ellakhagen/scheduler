@@ -9,7 +9,6 @@ import {Box, Button, Text, Drawer, DrawerBody, Input, useToast,
         email, password, term, yourClasses, headless}){
         const [generating, setGenerating] = useState(false);
         const toast = useToast();
-    
         async function generateStudentList(){
             setGenerating(true)
             toast({
