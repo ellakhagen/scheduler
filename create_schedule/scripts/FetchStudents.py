@@ -122,83 +122,59 @@ def fetch_students(term, classes, username, password, method):
     except:
         print("q2 did not work")
         sys.exit()
+    
+    actions.send_keys(Keys.ENTER).perform()
                 
 
     students = []
     for class_nbr in classes:
         #select the class nbr dropdown, for each class, get all students enrolled
-        subject, nbr, section = class_nbr.split('-')
 
         try:
-            subject_dropdown = WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, "//label[@title='Subject']/following::input[1]"))
+            college_dropdown = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, "//label[@title='College']/following::input[@type='text']"))
             ) 
-            subject_dropdown.click()
+            college_dropdown.click()
             print("subject dropdown found")
         except:
             print("subject drop down did not work")   
-            sys.exit()        
-        
-        time.sleep(5)
+            sys.exit()    
+
         try:
-            with open("class_dropdown.txt", 'w') as file:
-                file.write(driver.page_source)
-                print("class drop down")
-        except Exception as e:
-            print(f"An error occurred: {e}")
-            return None
-        
-        actions.move_to_element(subject_dropdown).click().send_keys(subject).send_keys(Keys.ENTER).perform()
-        
-        try:
-            nbr_dropdown = WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, "//label[@title='Catalog Nbr']/following::input[1]"))
+            all_college = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, "//span[text()='All College' and @class='promptMenuOptionText']"))
             ) 
-            nbr_dropdown.click()
-            print("nbr dropdown found")
+            all_college.click()
+            print("all college works")
         except:
-            print("nbr dropdown did not work")   
-            sys.exit()        
-        
-        time.sleep(5)
+            print("all college not available")   
+            sys.exit()  
+   
         try:
-            with open("nbr_dropdown.txt", 'w') as file:
+            with open("new.txt", 'w') as file:
                 file.write(driver.page_source)
-                print("nbr drop down")
+                print("new")
         except Exception as e:
             print(f"An error occurred: {e}")
             return None
-        
-        actions.move_to_element(subject_dropdown).click().send_keys(nbr).send_keys(Keys.ENTER).perform()
 
         try:
-            section_dropdown = WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, "//label[@title='Section']/following::input[1]"))
+            class_nbr_input = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, "//label[@title='Class Nbr']/following::input[1]"))   
             ) 
-            section_dropdown.click()
-            print("section dropdown found")
+            class_nbr_input.click()
+            actions.send_keys(class_nbr).perform()
+            time.sleep(5)
+            actions.send_keys(Keys.SPACE).perform()
+            #time.sleep(5)
+            #actions.move_to_element(class_nbr_input).click().send_keys(class_nbr).send_keys(Keys.ENTER).perform()
+            print("subject dropdown found")
         except:
-            print("section dropdown did not work")   
-            sys.exit()        
-        
-        time.sleep(5)
-        try:
-            with open("section_dropdown.txt", 'w') as file:
-                file.write(driver.page_source)
-                print("section drop down")
-        except Exception as e:
-            print(f"An error occurred: {e}")
-            return None
-        
-        actions.move_to_element(section_dropdown).click().send_keys(section).send_keys(Keys.ENTER).perform()
-
-        apply_button = WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, "'//input[@value='Apply']'"))
-            ) 
-        apply_button.click()
+            print("subject drop down did not work")   
+            sys.exit() 
+        time.sleep(30)       
         
 
-        time.sleep(10)
 
 
         

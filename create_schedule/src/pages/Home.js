@@ -48,6 +48,7 @@ function Home(){
     const {isOpen: isOpenClass, onOpen: onOpenClass, onClose: onCloseClass} = useDisclosure()
     const {isOpen: isOpenStudent, onOpen: onOpenStudent, onClose: onCloseStudent} = useDisclosure()
     const [headless, setHeadless] = useState(false)
+    const [generating, setGenerating] = useState(false);
 
     const navigate = useNavigate();
     const toast = useToast();
@@ -119,6 +120,7 @@ function Home(){
         setStudents(false);
         setStudentFile(null);
         setGeneratedStudentFile(null)
+        setGenerating(false)
     }
 
     useEffect(()=> {
@@ -268,7 +270,7 @@ function Home(){
         <StudentOverlay isOpen={isOpenStudent} onClose={onCloseStudent} studentFile={studentFile}
         setStudents={setStudents} setStudentFile={setStudentFile} generatedStudentFile={generatedStudentFile}
         setGeneratedStudentFile={setGeneratedStudentFile} email={email} password={password} term={term}
-        yourClasses={yourClasses} headless={headless}/>
+        yourClasses={yourClasses} headless={headless} generating={generating} setGenerating={setGenerating}/>
       </Box>
     )
 }

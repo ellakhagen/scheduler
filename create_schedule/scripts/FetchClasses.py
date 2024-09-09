@@ -106,7 +106,7 @@ def fetch_classes(driver, session, type, year):
         course_dict = {}
         page = 1
         while True:
-            driver.get(f"https://cmsweb.pscs.calpoly.edu/psc/CSLOPRD/EMPLOYEE/SA/s/WEBLIB_HCX_CM.H_CLASS_SEARCH.FieldFormula.IScript_ClassSearch?institution=SLCMP&term={term}&date_from=&date_thru=&subject=&subject_like=&catalog_nbr=&start_time_equals=&end_time_equals=&start_time_ge=&end_time_le=&days=&campus=&location=&x_acad_career=&acad_group=&rqmnt_designtn=&instruction_mode=&keyword=&class_nbr=&acad_org=&enrl_stat=&crse_attr=&crse_attr_value=&instructor_name=&instr_first_name=&session_code=&units=&trigger_search=&page={page}")
+            driver.get(f"https://cmsweb.pscs.calpoly.edu/psc/CSLOPRD/EMPLOYEE/SA/s/WEBLIB_HCX_CM.H_CLASS_SEARCH.FieldFormula.IScript_ClassSearch?institution=SLCMP&term={term}&enrl_stat=O&page={page}")
             soup = BeautifulSoup(driver.page_source, 'html.parser')
             json_data = soup.find('pre').get_text()
             data = json.loads(json_data)

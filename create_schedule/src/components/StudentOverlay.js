@@ -6,8 +6,7 @@ import {Box, Button, Text, Drawer, DrawerBody, Input, useToast,
     
     function StudentOverlay({isOpen, onClose, studentFile, setStudents, 
         setStudentFile, generatedStudentFile, setGeneratedStudentFile, 
-        email, password, term, yourClasses, headless}){
-        const [generating, setGenerating] = useState(false);
+        email, password, term, yourClasses, headless, generating, setGenerating}){
         const toast = useToast();
         async function generateStudentList(){
             setGenerating(true)
