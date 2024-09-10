@@ -150,34 +150,24 @@ def fetch_students(term, classes, username, password, method):
             print("all college not available")   
             sys.exit()  
    
-        try:
-            with open("new.txt", 'w') as file:
-                file.write(driver.page_source)
-                print("new")
-        except Exception as e:
-            print(f"An error occurred: {e}")
-            return None
 
         try:
             class_nbr_input = WebDriverWait(driver, 10).until(
                 EC.presence_of_element_located((By.XPATH, "//label[@title='Class Nbr']/following::input[1]"))   
             ) 
             class_nbr_input.click()
-            actions.send_keys(class_nbr).perform()
-            time.sleep(5)
-            actions.send_keys(Keys.SPACE).perform()
-            #time.sleep(5)
-            #actions.move_to_element(class_nbr_input).click().send_keys(class_nbr).send_keys(Keys.ENTER).perform()
+            actions.send_keys(class_nbr).send_keys(Keys.ENTER).perform()
             print("subject dropdown found")
         except:
             print("subject drop down did not work")   
             sys.exit() 
+        
+        apply = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, "//input[@value='Apply']"))
+        ) 
+        apply.click()
         time.sleep(30)       
-        
-
-
-
-        
+        break
 
     
     return set(students)
