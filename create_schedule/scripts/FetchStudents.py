@@ -5,6 +5,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
+from bs4 import BeautifulSoup
+import re
 
 from PortalLogin import login
 import sys
@@ -24,6 +26,8 @@ def fetch_students(term, classes, username, password, method):
 
     if method == "true":
         chrome_options.add_argument("--headless")
+    
+    chrome_options.add_argument("--incognito")
 
     #Let user pick preferred website
     driver = webdriver.Chrome(options=chrome_options)
@@ -104,6 +108,17 @@ def fetch_students(term, classes, username, password, method):
         sys.exit()
     
     time.sleep(5)
+        
+    try:
+        quarter = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.XPATH, f"//div[@title='{term}']"))
+        )
+        quarter.click()
+    except:
+        print("q2 did not work")
+        sys.exit()
+    
+    actions.send_keys(Keys.ENTER).perform()
 
     try:
         with open("quarters.txt", 'w') as file:
@@ -112,65 +127,267 @@ def fetch_students(term, classes, username, password, method):
     except Exception as e:
         print(f"An error occurred: {e}")
         return None
-        
-    
-    try:
-        quarter = WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, f"//input[@title='{term}']"))
-            )
-        quarter.click()
-    except:
-        print("q2 did not work")
-        sys.exit()
-    
-    actions.send_keys(Keys.ENTER).perform()
-                
+    time.sleep(5)   
 
-    students = []
+    
+    prev = ""
+    students = set() 
     for class_nbr in classes:
         #select the class nbr dropdown, for each class, get all students enrolled
+        subject, nbr, section = class_nbr.split("-")
+        print("prev: ", prev, "subject: ", subject, "sect: ", section)
+        if subject != prev:
+            print("entered")
+            try:
+                subj = WebDriverWait(driver, 10).until(
+                    EC.presence_of_element_located((By.XPATH, "//label[@title='Subject']/following::input[@type='text']"))
+                ) 
+                subj.click()
+            except:
+                print("class_nbr drop down did not work")   
+                sys.exit()   
+            time.sleep(5)
+            try:
+                press_subject = WebDriverWait(driver, 10).until(
+                    EC.presence_of_element_located((By.XPATH, f"//div[@title='{subject}']"))
+                )
+                press_subject.click()
+            except:
+                print("subject not found")
+                sys.exit()
+            actions.send_keys(Keys.ENTER).perform()
+            
+            try: 
+                apply = WebDriverWait(driver, 10).until(
+                        EC.presence_of_element_located((By.XPATH, "//input[@value='Apply']"))
+                ) 
+                apply.click()
+                print("apply worked")
+            except:
+                print("apply did not work")
+
+            try: 
+                opts = WebDriverWait(driver, 30).until(
+                        EC.presence_of_element_located((By.XPATH, "//select[@aria-label='Select a View:']"))
+                ) 
+                opts.click()
+                print("opts worked")
+            except:
+                print("apply did not work")
+
+            try: 
+                student_list = WebDriverWait(driver, 20).until(
+                        EC.presence_of_element_located((By.XPATH, "//option[contains(text(), 'Student Listing')]"))
+                ) 
+                student_list.click()
+            except Exception as e:
+                print("Student list option not found, please look for line 'sect = ' in FetchStudents.py and compare paths")   
+                print(f"An error occurred: {e}")
+                sys.exit()
+
+
 
         try:
-            college_dropdown = WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, "//label[@title='College']/following::input[@type='text']"))
-            ) 
-            college_dropdown.click()
-            print("subject dropdown found")
+            catalog_nbr = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, "//label[text()='Catalog Nbr']/following::td[@class='OOLT']/select"))
+            )
+            catalog_nbr.click()
         except:
-            print("subject drop down did not work")   
-            sys.exit()    
+            print("catalog nbr label not available")
+            sys.exit()
 
         try:
-            all_college = WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, "//span[text()='All College' and @class='promptMenuOptionText']"))
-            ) 
-            all_college.click()
-            print("all college works")
+            catalog_nbr = WebDriverWait(driver, 30).until(
+                EC.presence_of_element_located((By.XPATH, f"//option[contains(text(), '{nbr}')]"))
+            )
+            catalog_nbr.click()
         except:
-            print("all college not available")   
-            sys.exit()  
-   
+            print("catalog nbr not available")
+            sys.exit()
 
         try:
-            class_nbr_input = WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, "//label[@title='Class Nbr']/following::input[1]"))   
-            ) 
-            class_nbr_input.click()
-            actions.send_keys(class_nbr).send_keys(Keys.ENTER).perform()
-            print("subject dropdown found")
+            sect = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, "//label[text()='Section']/following::td[@class='OOLT']/select"))
+            )
+            sect.click()
         except:
-            print("subject drop down did not work")   
-            sys.exit() 
-        
-        apply = WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, "//input[@value='Apply']"))
-        ) 
-        apply.click()
-        time.sleep(30)       
-        break
+            print("catalog nbr label not available")
+            sys.exit()
+
+        try:
+            sect = WebDriverWait(driver, 30).until(
+                EC.presence_of_element_located((By.XPATH, f"//option[contains(text(), '{section}')]"))
+            )
+            sect.click()
+        except:
+            print("Sect not available")
+            sys.exit()
 
     
+        soup = BeautifulSoup(driver.page_source, 'html.parser')
+        td_elements = soup.find_all('td')
+        emails = [td.find('a').text for td in td_elements if td.find('a') and '@calpoly.edu' in td.find('a').text]
+        print(emails)
+        for email in emails:
+            students.add(email)
+        
+
+        prev = subject
+        print("success")
+
+
+    print(students)
+    
+
+"""
+        try:
+            department = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, "//label[@title='Department' and contains(span/text(), 'Department')]"))
+            ) 
+            department.click()
+        except:
+            print("department drop down did not work")   
+            sys.exit()    
+        time.sleep(10)
+
+        try:
+            with open("subjects.txt", 'w') as file:
+                file.write(driver.page_source)
+                print("subjects")
+        except Exception as e:
+            print(f"An error occurred: {e}")
+            return None
+
+
+        try:
+            course_dropdown = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, "//label[@title='Catalog Nbr']/following::input[@type='text']"))
+            ) 
+            course_dropdown.click()
+            print("course dropdown found")
+        except Exception as e:
+            print("Course dropdown option not found, please look for line 'course_dropdown = ' in FetchStudents.py")   
+            print(f"An error occurred: {e}")
+            sys.exit()    
+
+        time.sleep(10)
+        try:
+            with open("courses.txt", 'w') as file:
+                file.write(driver.page_source)
+                print("courses")
+        except Exception as e:
+            print(f"An error occurred: {e}")
+            return None
+        
+        try:
+            nbr = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, f"//span[text()='{number}' and @class='promptMenuOptionText']"))
+            ) 
+            nbr.click()
+            print("course number found")
+        except Exception as e:
+            try:
+                nbr = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, f"//input[@value='{number}']"))
+                ) 
+                nbr.click()
+                print("course number found")
+            except:
+                print(f"Course number {number} not found, please look for line 'nbr = ' in FetchStudents.py")   
+                print(f"An error occurred: {e}")
+                sys.exit()    
+
+        try:
+            section_dropdown = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, "//label[@title='Section']/following::input[@type='text']"))
+            ) 
+            section_dropdown.click()
+            print("section dropdown found")
+        except Exception as e:
+            print("Section dropdown not found, please look for line 'section_dropdown = ' in FetchStudents.py")   
+            print(f"An error occurred: {e}")
+            sys.exit()    
+
+        time.sleep(10)
+        try:
+            with open("sections.txt", 'w') as file:
+                file.write(driver.page_source)
+                print("sections")
+        except Exception as e:
+            print(f"An error occurred: {e}")
+            return None
+        
+        try:
+            sect = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, f"//span[text()='{section}' and @class='promptMenuOptionText']"))
+            ) 
+            sect.click()
+            print("section clicked")
+        except Exception as e:
+            try:
+                sect = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, f"//span[contains(text(), '{section}')]"))
+                ) 
+                sect.click()
+                print("course number found")
+            except:
+                print("Section not found, please look for line 'sect = ' in FetchStudents.py")   
+                print(f"An error occurred: {e}")
+                sys.exit()  
+
+        try: 
+            apply = WebDriverWait(driver, 10).until(
+                    EC.presence_of_element_located((By.XPATH, "//input[@value='Apply']"))
+            ) 
+            apply.click()
+            print("apply worked")
+        except:
+            print("apply did not work")
+        time.sleep(20)
+
+        try: 
+            opts = WebDriverWait(driver, 10).until(
+                    EC.presence_of_element_located((By.XPATH, "//select[@aria-label='Select a View:']"))
+            ) 
+            opts.click()
+            print("opts worked")
+        except:
+            print("apply did not work")
+
+        time.sleep(5)
+        try:
+            with open("opts.txt", 'w') as file:
+                file.write(driver.page_source)
+                print("opts")
+        except Exception as e:
+            print(f"An error occurred: {e}")
+            return None
+    
+        try: 
+            student_list = WebDriverWait(driver, 10).until(
+                    EC.presence_of_element_located((By.XPATH, "//option[contains(text(), 'Student Listing')]"))
+            ) 
+            student_list.click()
+            print("student_list worked")
+        except Exception as e:
+            print("Student list option not found, please look for line 'sect = ' in FetchStudents.py and compare paths")   
+            print(f"An error occurred: {e}")
+            sys.exit()
+
+        time.sleep(15)
+        try:
+            with open(f"students{class_nbr}.txt", 'w') as file:
+                file.write(driver.page_source)
+                print("students")
+        except Exception as e:
+            print(f"An error occurred: {e}")
+            sys.exit()
+
+        
+   
+    
     return set(students)
+     """
     
 
 if __name__ == "__main__":

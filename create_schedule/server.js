@@ -64,7 +64,7 @@ app.post('/get_classes', (req, res) => {
 
 app.post('/get_students', (req, res) => {
     const {email, password, term, yourClasses, headless} = req.body
-    const courses = Object.values(yourClasses).map(obj => `"${obj.course_number}"`).join(' ');
+    const courses = Object.keys(yourClasses).map(key => `"${key}"`).join(' ');
     exec(`python3 ./scripts/FetchStudents.py "${email}" "${password}" ${headless} "${term}" ${courses}`, 
     (error, stdout, stderr) => {
         res.send(`Output: ${stdout}, ${stderr}, ${error}`)
