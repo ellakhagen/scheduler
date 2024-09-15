@@ -1,0 +1,276 @@
+<html lang="en"><head>
+    <!-- ITS - Information Systems Web Template version 4.0 - Based on CP Web Template 5.0 -->
+    <title>PolyProfile - Office of the Registrar - Cal Poly</title>
+    <meta charset="utf8">
+    <meta name="robots" content="noindex,nofollow">
+    
+<meta name="author" content="ITS - Information Systems">
+
+    <link href="/cpwebtemplate/5.0.1/common/css/cp_screen.css" rel="stylesheet" type="text/css">
+    <link href="/cpwebtemplate/5.0.1/common/css/cp_print.css" rel="stylesheet" type="text/css" media="print">
+    
+    <!--[if IE 8]>
+    <link href="/cpwebtemplate/5.0.1/common/css/ie8_screen.min.css" rel="stylesheet" type="text/css" />
+    <link href="/cpwebtemplate/5.0.1/common/css/ie8_print.min.css" rel="stylesheet" type="text/css" media="print" />
+    <![endif]-->
+    <!--[if IE 7]>
+    <link href="/cpwebtemplate/5.0.1/common/css/ie7_screen.min.css" rel="stylesheet" type="text/css" />
+    <link href="/cpwebtemplate/5.0.1/common/css/ie7_print.min.css" rel="stylesheet" type="text/css" media="print" />
+    <![endif]-->
+    
+    <link href="/common/templates/edge/styles/smoothness/jquery-ui-1.9.1.custom.min.css" rel="stylesheet" type="text/css">
+    <link href="/common/templates/edge/styles/screen.css" rel="stylesheet" type="text/css">
+    <link href="/common/templates/edge/styles/print.css" rel="stylesheet" type="text/css" media="print">
+    <link href="/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/common/templates/edge/images/favicon.ico" type="image/x-icon">            
+    <!-- Custom Embedded Styles (to modify page content blocks) -->          
+    <style media="screen" type="text/css">
+    
+
+      #content {
+        padding: 4px 0 0 0;
+        border-right: none;
+        width: 100%;
+        margin-right: 0;
+        float: left;
+      }
+      
+      #mainLeft {
+        width: 78%;
+        margin-right: 10px;
+        max-width: 750px;
+        min-width: 100px;
+        float: left;
+      }
+      
+      #contentNav {
+        width: 20%;
+      }
+      
+
+    </style>
+    <noscript>
+      <style> 
+        #searchForm {
+          display:block;
+        }
+        
+        #mainLeft .backNav {
+          display:block;
+        }
+      </style>
+    </noscript>
+    
+
+    </head>
+    <body>
+    <div id="wrapper">
+      <div id="header">
+        <div id="accessibilityNav">
+          <ul>
+            <li><a href="#topH1" id="skip" title="skip to content">Skip to Content</a></li>
+            <li><a href="https://www.calpoly.edu/help.html" id="helpLink" title="help">?</a></li>
+          </ul>
+        </div><!-- #accessibilityNav -->
+    
+
+        <div id="audienceNav">
+      
+<ul>
+<li><a href="https://www.calpoly.edu/student/enrolled.html">Current Students</a></li>
+<li><a href="https://admissions.calpoly.edu/">Prospective Students</a></li>
+<li><a href="https://www.calpoly.edu/student/parents.html">Parents</a></li>
+<li><a href="https://www.calpoly.edu/business-community.html">Business Community</a></li>
+<li><a href="https://www.calpoly.edu/faculty-staff/faculty-staff.html">Faculty &amp; Staff</a></li>
+<li><a href="https://alumni.calpoly.edu/">Alumni</a></li>
+</ul>
+  
+        </div><!-- #audienceNav -->
+      
+
+        <hr>
+        
+
+          <div id="myCalPolyNav">  
+               <a href="https://my.calpoly.edu" id="login">my CalPoly login</a>
+          </div>
+          
+
+        <div id="headerContent">
+          <div id="cplogo">
+            <a href="https://www.calpoly.edu/"><img src="/cpwebtemplate/5.0.1/common/images_html/header/cp_logo.jpg" alt="Cal Poly, San Luis Obispo" height="75" width="150" title="Go to Cal Poly Home"></a>
+          </div><!-- #cplogo -->
+          <div id="deptName">
+            <h2><a href="https://dashboards.calpoly.edu/dw/polydata/student_poly_profile.search">PolyProfile</a></h2>
+            <h3>Student Information System</h3>
+          </div><!-- #deptName -->
+        </div><!-- #headerContent -->
+      </div><!-- #header -->
+    
+
+          <!-- Main Horizontal Navigation -->
+          <div id="cp">
+            <ul id="cuUl" class="cpStandardNav">
+              
+<li><a href="https://registrar.calpoly.edu/">Registrar Home</a></li>
+<li><a href="https://registrar.calpoly.edu/acad_cal">Calendars &amp; Deadlines</a></li>
+<li><a href="https://registrar.calpoly.edu/Contact_Information">Contact Information</a></li>
+<li><a href="https://registrar.calpoly.edu/registrar_forms">Forms</a></li>
+
+              <li id="searchli">
+                <div id="search">
+                  <form method="get" title="Search Form" action="https://www.calpoly.edu/search/?q=">
+                    <div>
+                      <input type="text" id="q" name="q" value="Search" title="Search Cal Poly" alt="Search Text" maxlength="256">
+                      <input type="image" id="searchSubmit" name="submit" src="/cpwebtemplate/5.0.1/common/images_html/header/search-arrow.png" alt="Go" title="Submit Search Query">
+                    </div>
+                    </form>
+                </div>
+              </li>
+            </ul>
+          </div><!-- #cp -->
+        
+
+      <div id="content">
+        <div id="contentLine"><!-- --></div>
+      
+      
+ 
+        <div id="contentNav">
+          <div id="contentNavInner">
+      
+<h2>Menu:</h2>
+<ul id="innerNav_menu">
+<li><a href="#" class="newSearch">New Search</a></li>
+<li class="print"><a href="#print">Print Page</a></li><li class="logout"><a href="/logout" title="Sign Out">Sign Out</a></li>
+</ul>
+
+         </div><!-- #contentNavInner-->
+        </div><!-- #contentNav-->
+      
+
+        <div id="mainLeft">
+          <a id="topH1" name="topH1"></a>
+      
+<!-- Start of Content -->
+<div class="searchBox">
+<a href="#newSearch" class="newSearch" title="New Search"><h3>New Search »</h3></a>
+<form action="https://dashboards.calpoly.edu/dw/polydata/student_poly_profile.search_results" method="GET" name="profile_search" id="searchForm" style="display: none;">
+<p>Enter criteria in any of the following fields to search for a student.</p>
+<table>
+<tbody><tr class="even">
+<td><label for="p_emplid">Empl ID:</label></td>
+<td><input type="text" name="p_emplid" size="30" id="p_emplid"></td>
+</tr>
+<tr class="odd">
+<td><label for="p_username">Campus Identifier:</label></td>
+<td><input type="text" name="p_username" id="p_username">@calpoly.edu</td>
+</tr>
+<tr class="even">
+<td><label for="p_polycard_barcode">PolyCard ID:</label></td>
+<td><input type="text" name="p_polycard_barcode" size="30" id="p_polycard_barcode"></td>
+</tr>
+<tr class="odd">
+<td><label for="p_pref_last_name">Preferred Last Name:</label></td>
+<td><input type="text" name="p_pref_last_name" size="30" id="p_pref_last_name"></td>
+</tr>
+<tr class="even">
+<td><label for="p_pref_first_name">Preferred First Name:</label></td>
+<td><input type="text" name="p_pref_first_name" size="30" id="p_pref_first_name"></td>
+</tr>
+<tr class="odd">
+<td><label for="p_prim_last_name">Primary Last Name:</label></td>
+<td><input type="text" name="p_prim_last_name" size="30" id="p_prim_last_name"></td>
+</tr>
+<tr class="even">
+<td><label for="p_prim_first_name">Primary First Name:</label></td>
+<td><input type="text" name="p_prim_first_name" size="30" id="p_prim_first_name"></td>
+</tr>
+<tr class="odd">
+<td><label for="p_major">Major:</label></td>
+<td><input type="text" name="p_major" size="30" id="p_major"> e.g. PHYS, ENGL, CSC</td>
+</tr>
+<tr class="even">
+<td><em>Search fields are <strong>NOT</strong> case sensitive.<br>Leading zeros on ID numbers are NOT required.</em></td>
+<td style="text-align:right;"><input type="submit" value="Search">&nbsp;<input type="reset" value="Reset"></td>
+</tr>
+</tbody></table>
+</form>
+</div>
+<div class="showOnPrint">
+<div class="warningBox"><strong>PERSONAL AND CONFIDENTIAL STUDENT DATA:</strong><p>The data contained in this report is the property of California Polytechnic State University, San Luis Obispo (Cal Poly) and may not be shared without the express consent of the student.</p><p>By viewing this report, the user acknowledges the sensitive and private nature of the data contained in this report and agrees to abide by Cal Poly's Security and Confidentiality Policy. Without written student authorization, this data may only be used for official university business.</p><p>The report is intended for the requested purposes only.</p>
+</div>
+</div>
+<div id="alerts"><img src="/common/templates/edge/images/alert.png" height="48" width="48" alt="Alert" title="PolyProfile Alert"><ul>
+<li>The information in this report contains <strong class="red">PERSONAL AND CONFIDENTIAL STUDENT DATA</strong> and is the property of Cal Poly. This information cannot be shared without the express consent of the student.</li>
+<li><a href="https://registrar.calpoly.edu/ferpa_summary">Read Full Disclaimer</a> »</li>
+</ul></div>
+<p><span class="red">FERPA = FERPA Protected Student.</span> &nbsp;»&nbsp; <a href="https://registrar.calpoly.edu/ferpa_summary">What is FERPA?</a></p>
+<table>
+<tbody><tr class="odd">
+<th align="left">Preferred Name</th>
+<th align="left">Primary Program - Plan(s)</th>
+<th align="left">Academic Level</th>
+</tr><tr class="even">
+<td><a href="https://dashboards.calpoly.edu/dw/polydata/student_poly_profile.display?p_emplid=027214050">Hagen, Ella (027214050)</a></td>
+<td>Undergraduate-CSC</td>
+<td>Senior</td>
+</tr>
+</tbody></table>
+<br>
+<table>
+<tbody><tr class="odd">
+<td>Found 1 matching person.</td>
+</tr>
+</tbody></table>
+<div id="full_disclaimer"></div>
+<div class="warningBox"><strong>PERSONAL AND CONFIDENTIAL STUDENT DATA:</strong><p>The data contained in this report is the property of California Polytechnic State University, San Luis Obispo (Cal Poly) and may not be shared without the express consent of the student.</p><p>By viewing this report, the user acknowledges the sensitive and private nature of the data contained in this report and agrees to abide by Cal Poly's Security and Confidentiality Policy. Without written student authorization, this data may only be used for official university business.</p><p>The report is intended for the requested purposes only.</p>
+</div>
+<!-- End of Content -->
+
+    </div><!-- #mainLeft -->
+    <div id="mainLeftFull">
+    <!-- Not sure what can go here --> 
+    </div><!--#mainLeftFull-->
+    </div><!-- #content-->
+    <div class="clear"></div>
+    <div id="footer">
+    
+
+    <ul id="footer_links">
+      <li><a href="https://www.calpoly.edu">CP Home</a></li> 
+      <li><a href="https://myportal.calpoly.edu/s/directory">Directory</a></li> 
+      <li><a href="https://maps.calpoly.edu">Campus Maps &amp; Directions</a></li> 
+      <li><a href="https://www.bkstr.com/calpolystore">University Store</a></li> 
+      <li><a href="https://registrar.calpoly.edu/acad_cal/">Calendar</a></li> 
+      <li><a href="https://afd.calpoly.edu/hr/job-opportunities/">Employment</a></li> 
+      <li><a href="https://policy.calpoly.edu/">Campus Policies</a></li> 
+      <li><a href="https://www.calpoly.edu/contact/">Contact Us</a></li>
+      <li id="footerLogo"><a href="https://www.calpoly.edu/"><img src="/cpwebtemplate/5.0.1/common/images_html/footer/footer_logo.png" height="24" width="138" alt="Cal Poly" title="Go to Cal Poly Home"></a></li>    
+    </ul>
+    
+<ul id="footer_help">
+<li><a href="https://get.adobe.com/reader/">Get Adobe Reader</a></li>
+<li><a href="https://registrar.calpoly.edu/Contact_Information">Need help?</a></li>
+</ul>
+
+    <div id="footer_deptinfo">
+    <p>
+          © 2024 - Office of the Registrar | California Polytechnic State University<br>
+      San Luis Obispo, California 93407 | Phone: 805.756.2531
+    </p>
+    </div><!-- #footer_deptinfo -->
+    </div><!-- #footer -->
+    <div class="clear"></div>
+    </div><!-- #wrapper -->
+    
+<!-- Load any necessary javascript -->
+
+    <script src="/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="/jquery/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="/common/templates/edge/scripts/custom.js" type="text/javascript"></script>
+    
+    
+    
+</body></html>

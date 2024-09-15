@@ -36,7 +36,6 @@ app.post('/get_classes', (req, res) => {
             return res.status(400).send('Option not available for class search')
         }
         if (error){
-            console.log("hmmmmmmm")
             console.error(`exec error: ${error}`);
             return res.status(500).send(`Error: ${stderr}`);
         }

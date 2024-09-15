@@ -1,0 +1,1269 @@
+<html lang="en"><head>
+    <!-- ITS - Information Systems Web Template version 4.0 - Based on CP Web Template 5.0 -->
+    <title>PolyProfile - Office of the Registrar - Cal Poly</title>
+    <meta charset="utf8">
+    <meta name="robots" content="noindex,nofollow">
+    
+<meta name="author" content="ITS - Information Systems">
+
+    <link href="/cpwebtemplate/5.0.1/common/css/cp_screen.css" rel="stylesheet" type="text/css">
+    <link href="/cpwebtemplate/5.0.1/common/css/cp_print.css" rel="stylesheet" type="text/css" media="print">
+    
+    <!--[if IE 8]>
+    <link href="/cpwebtemplate/5.0.1/common/css/ie8_screen.min.css" rel="stylesheet" type="text/css" />
+    <link href="/cpwebtemplate/5.0.1/common/css/ie8_print.min.css" rel="stylesheet" type="text/css" media="print" />
+    <![endif]-->
+    <!--[if IE 7]>
+    <link href="/cpwebtemplate/5.0.1/common/css/ie7_screen.min.css" rel="stylesheet" type="text/css" />
+    <link href="/cpwebtemplate/5.0.1/common/css/ie7_print.min.css" rel="stylesheet" type="text/css" media="print" />
+    <![endif]-->
+    
+    <link href="/common/templates/edge/styles/smoothness/jquery-ui-1.9.1.custom.min.css" rel="stylesheet" type="text/css">
+    <link href="/common/templates/edge/styles/screen.css" rel="stylesheet" type="text/css">
+    <link href="/common/templates/edge/styles/print.css" rel="stylesheet" type="text/css" media="print">
+    <link href="/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/common/templates/edge/images/favicon.ico" type="image/x-icon">            
+    <!-- Custom Embedded Styles (to modify page content blocks) -->          
+    <style media="screen" type="text/css">
+    
+
+      #content {
+        padding: 4px 0 0 0;
+        border-right: none;
+        width: 100%;
+        margin-right: 0;
+        float: left;
+      }
+      
+      #mainLeft {
+        width: 78%;
+        margin-right: 10px;
+        max-width: 750px;
+        min-width: 100px;
+        float: left;
+      }
+      
+      #contentNav {
+        width: 20%;
+      }
+      
+
+    </style>
+    <noscript>
+      <style> 
+        #searchForm {
+          display:block;
+        }
+        
+        #mainLeft .backNav {
+          display:block;
+        }
+      </style>
+    </noscript>
+    
+
+    <script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/loader.js"></script><link id="load-css-0" rel="stylesheet" type="text/css" href="https://www.gstatic.com/charts/51/css/core/tooltip.css"><link id="load-css-1" rel="stylesheet" type="text/css" href="https://www.gstatic.com/charts/51/css/util/util.css"><script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_default_module.js"></script><script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_graphics_module.js"></script><script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_ui_module.js"></script><script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_gauge_module.js"></script></head>
+    <body>
+    <div id="wrapper">
+      <div id="header">
+        <div id="accessibilityNav">
+          <ul>
+            <li><a href="#topH1" id="skip" title="skip to content">Skip to Content</a></li>
+            <li><a href="https://www.calpoly.edu/help.html" id="helpLink" title="help">?</a></li>
+          </ul>
+        </div><!-- #accessibilityNav -->
+    
+
+        <div id="audienceNav">
+      
+<ul>
+<li><a href="https://www.calpoly.edu/student/enrolled.html">Current Students</a></li>
+<li><a href="https://admissions.calpoly.edu/">Prospective Students</a></li>
+<li><a href="https://www.calpoly.edu/student/parents.html">Parents</a></li>
+<li><a href="https://www.calpoly.edu/business-community.html">Business Community</a></li>
+<li><a href="https://www.calpoly.edu/faculty-staff/faculty-staff.html">Faculty &amp; Staff</a></li>
+<li><a href="https://alumni.calpoly.edu/">Alumni</a></li>
+</ul>
+  
+        </div><!-- #audienceNav -->
+      
+
+        <hr>
+        
+
+          <div id="myCalPolyNav">  
+               <a href="https://my.calpoly.edu" id="login">my CalPoly login</a>
+          </div>
+          
+
+        <div id="headerContent">
+          <div id="cplogo">
+            <a href="https://www.calpoly.edu/"><img src="/cpwebtemplate/5.0.1/common/images_html/header/cp_logo.jpg" alt="Cal Poly, San Luis Obispo" height="75" width="150" title="Go to Cal Poly Home"></a>
+          </div><!-- #cplogo -->
+          <div id="deptName">
+            <h2><a href="https://dashboards.calpoly.edu/dw/polydata/student_poly_profile.search">PolyProfile</a></h2>
+            <h3>Student Information System</h3>
+          </div><!-- #deptName -->
+        </div><!-- #headerContent -->
+      </div><!-- #header -->
+    
+
+          <!-- Main Horizontal Navigation -->
+          <div id="cp">
+            <ul id="cuUl" class="cpStandardNav">
+              
+<li><a href="https://registrar.calpoly.edu/">Registrar Home</a></li>
+<li><a href="https://registrar.calpoly.edu/acad_cal">Calendars &amp; Deadlines</a></li>
+<li><a href="https://registrar.calpoly.edu/Contact_Information">Contact Information</a></li>
+<li><a href="https://registrar.calpoly.edu/registrar_forms">Forms</a></li>
+
+              <li id="searchli">
+                <div id="search">
+                  <form method="get" title="Search Form" action="https://www.calpoly.edu/search/?q=">
+                    <div>
+                      <input type="text" id="q" name="q" value="Search" title="Search Cal Poly" alt="Search Text" maxlength="256">
+                      <input type="image" id="searchSubmit" name="submit" src="/cpwebtemplate/5.0.1/common/images_html/header/search-arrow.png" alt="Go" title="Submit Search Query">
+                    </div>
+                    </form>
+                </div>
+              </li>
+            </ul>
+          </div><!-- #cp -->
+        
+
+      <div id="content">
+        <div id="contentLine"><!-- --></div>
+      
+      
+ 
+        <div id="contentNav">
+          <div id="contentNavInner">
+      
+<h2>Menu:</h2>
+<ul id="innerNav_menu">
+<li><a href="#" class="newSearch">New Search</a></li>
+<li><a href="https://dashboards.calpoly.edu/dw/polydata/student_poly_profile.display_xfer_detail?p_emplid=027214050">Higher Ed Credits Detail</a></li>
+<li><a href="https://dashboards.calpoly.edu/dw/polydata/student_poly_profile.display_test_detail?p_emplid=027214050">Test Credits Detail</a></li>
+<li><a href="https://eforms.calpoly.edu/new/icma_changemajor?emplid=027214050">Create ICMA</a></li>
+<li><a href="https://myportal.calpoly.edu/p/gpa-calculator.ctf3/max/render.uP" target="_blank">GPA Calculator</a></li>
+<li class="print"><a href="#print">Print Page</a></li><li class="logout"><a href="/logout" title="Sign Out">Sign Out</a></li>
+</ul>
+<h2>Sections:</h2>
+<ul id="innerSubNav_sections">
+<li class="scroll"><a href="#personal_information">Personal Information</a></li>
+<li class="scroll"><a href="#contact_information">Contact Information</a></li>
+<li class="scroll"><a href="#university_memorandum">University Memorandum</a></li>
+<li class="scroll"><a href="#additional_higher_education_credits">Additional Higher Ed Credits</a></li>
+<li class="scroll"><a href="#test_credits">Test Credits</a></li>
+<li class="scroll"><a href="#degrees_conferred">Degrees Conferred</a></li>
+<li class="scroll"><a href="#career_program_plans">Career Program Plans</a></li>
+<li class="scroll"><a href="#individualized_change_of_major_agreements_icma">Change of Major Agreements</a></li>
+<li class="scroll"><a href="#academic_progress">Academic Progress</a></li>
+<li class="scroll"><a href="#enrollment_summary_unofficial">Enrollment Summary</a></li>
+<li class="scroll"><a href="#enrollment_history_unofficial">Enrollment History</a></li>
+<li class="scroll"><a href="#planned_courses">Planned Courses</a></li>
+</ul>
+
+         </div><!-- #contentNavInner-->
+        </div><!-- #contentNav-->
+      
+
+        <div id="mainLeft">
+          <a id="topH1" name="topH1"></a>
+      
+<!-- Start of Content -->
+<div class="searchBox">
+<a href="#newSearch" class="newSearch" title="New Search"><h3>New Search »</h3></a>
+<form action="https://dashboards.calpoly.edu/dw/polydata/student_poly_profile.search_results" method="GET" name="profile_search" id="searchForm" style="display: none;">
+<p>Enter criteria in any of the following fields to search for a student.</p>
+<table>
+<tbody><tr class="even">
+<td><label for="p_emplid">Empl ID:</label></td>
+<td><input type="text" name="p_emplid" size="30" id="p_emplid"></td>
+</tr>
+<tr class="odd">
+<td><label for="p_username">Campus Identifier:</label></td>
+<td><input type="text" name="p_username" id="p_username">@calpoly.edu</td>
+</tr>
+<tr class="even">
+<td><label for="p_polycard_barcode">PolyCard ID:</label></td>
+<td><input type="text" name="p_polycard_barcode" size="30" id="p_polycard_barcode"></td>
+</tr>
+<tr class="odd">
+<td><label for="p_pref_last_name">Preferred Last Name:</label></td>
+<td><input type="text" name="p_pref_last_name" size="30" id="p_pref_last_name"></td>
+</tr>
+<tr class="even">
+<td><label for="p_pref_first_name">Preferred First Name:</label></td>
+<td><input type="text" name="p_pref_first_name" size="30" id="p_pref_first_name"></td>
+</tr>
+<tr class="odd">
+<td><label for="p_prim_last_name">Primary Last Name:</label></td>
+<td><input type="text" name="p_prim_last_name" size="30" id="p_prim_last_name"></td>
+</tr>
+<tr class="even">
+<td><label for="p_prim_first_name">Primary First Name:</label></td>
+<td><input type="text" name="p_prim_first_name" size="30" id="p_prim_first_name"></td>
+</tr>
+<tr class="odd">
+<td><label for="p_major">Major:</label></td>
+<td><input type="text" name="p_major" size="30" id="p_major"> e.g. PHYS, ENGL, CSC</td>
+</tr>
+<tr class="even">
+<td><em>Search fields are <strong>NOT</strong> case sensitive.<br>Leading zeros on ID numbers are NOT required.</em></td>
+<td style="text-align:right;"><input type="submit" value="Search">&nbsp;<input type="reset" value="Reset"></td>
+</tr>
+</tbody></table>
+</form>
+</div>
+<div class="showOnPrint">
+<div class="warningBox"><strong>PERSONAL AND CONFIDENTIAL STUDENT DATA:</strong><p>The data contained in this report is the property of California Polytechnic State University, San Luis Obispo (Cal Poly) and may not be shared without the express consent of the student.</p><p>By viewing this report, the user acknowledges the sensitive and private nature of the data contained in this report and agrees to abide by Cal Poly's Security and Confidentiality Policy. Without written student authorization, this data may only be used for official university business.</p><p>The report is intended for the requested purposes only.</p>
+</div>
+</div>
+<h2 class="sectionTitle expanded" id="personal_information"><i class="icon-collapse-alt"></i> Personal Information</h2>
+<div class="sectionContent">
+<h3 class="margin-top-10">Hagen, Ella</h3>
+<div class="rounded" style="padding:15px; overflow:auto;">
+<div class="float-left">
+<img src="STUDENT_POLY_PROFILE.photo?p_photo_id=22182D0E92C93785E0630100007F4CA2" alt="Photo">
+</div>
+<div class="float-left"><ul style="list-style:none;">
+<li><strong>Name:</strong> Hagen, Ella</li>
+<li><strong>Email Address:</strong> <a href="mailto:elhagen@calpoly.edu">elhagen@calpoly.edu</a></li>
+<li><strong>Empl ID:</strong> 027214050</li>
+</ul></div><div class="clear"></div>
+</div>
+</div><!-- end sectionContent-->
+<div class="backNav"><a href="#topH1">Back to Top ^</a></div>
+<h2 class="sectionTitle expanded" id="contact_information"><i class="icon-collapse-alt"></i> Contact Information</h2>
+<div class="sectionContent">
+<div class="margin-top-10">
+<div class="float-left width-33-percent">
+<h3>Mailing Address </h3>
+<ul style="list-style:none; margin:0; padding:0;"><li>613 Grove Ct</li>
+<li>Arroyo Grande, CA 93420-3516</li>
+<li>United States</li></ul>
+</div>
+<div class="float-left width-33-percent">
+<h3>Univ. Housing Address</h3>
+<em>No address available</em>
+</div>
+<div class="float-left width-33-percent">
+<h3>Home Address </h3>
+<ul style="list-style:none; margin:0; padding:0;"><li>613 Grove Ct</li>
+<li>Arroyo Grande, CA 93420-3516</li>
+<li>United States</li></ul>
+</div>
+<div class="clear"></div>
+</div>
+</div><!-- end sectionContent-->
+<div class="backNav"><a href="#topH1">Back to Top ^</a></div>
+<h2 class="sectionTitle expanded" id="university_memorandum"><i class="icon-collapse-alt"></i> University Memorandum</h2>
+<div class="sectionContent">
+<p>A maximum of 105 units accepted from Community Colleges. Not all units appearing in units earned (UE) are necessarily applicable to the student's current degree program. If your record has non baccalaureate courses, please deduct those units from your UE totals.</p><p>Not all transfer work may be reflected and exact course equivalencies may not be displayed. Credit applied toward GED1 may not entirely satisfy this requirement. Please refer to your Degree Progress Report to confirm whether D1 has been satisfied. </p>
+</div><!-- end sectionContent-->
+<div class="backNav"><a href="#topH1">Back to Top ^</a></div>
+<h2 class="sectionTitle expanded" id="additional_higher_education_credits"><i class="icon-collapse-alt"></i> Additional Higher Education Credits</h2>
+<div class="sectionContent">
+<h3>UGRD</h3>
+<table>
+<tbody><tr class="odd">
+<th align="left" width="27%">Institution</th>
+<th align="left" width="25%">Term Credits Applied</th>
+<th align="right" width="10%">Units<br>Att</th>
+<th align="right" width="10%">Units<br>Earned</th>
+<th align="right" width="10%">Units<br>Graded</th>
+<th align="right" width="10%">Grade<br>Points</th>
+<th align="right" width="8%">GPA</th>
+</tr>
+<tr valign="top" class="even">
+<td>Allan Hancock College</td>
+<td>Fall Quarter 2022</td>
+<td align="right">6.00</td>
+<td align="right">6.00</td>
+<td align="right">6.00</td>
+<td align="right">24.00</td>
+<td align="right">4.000</td>
+</tr>
+<tr valign="top" class="odd">
+<td>Cuesta College</td>
+<td>Fall Quarter 2022</td>
+<td align="right">4.50</td>
+<td align="right">4.50</td>
+<td align="right">4.50</td>
+<td align="right">16.65</td>
+<td align="right">3.700</td>
+</tr>
+<tr valign="top" class="row-shaded even">
+<td colspan="2"><b>Total:</b></td>
+<td align="right">10.50</td>
+<td align="right">10.50</td>
+<td align="right">10.50</td>
+<td align="right">40.65</td>
+<td>&nbsp;</td>
+</tr>
+</tbody></table>
+</div><!-- end sectionContent-->
+<div class="backNav"><a href="#topH1">Back to Top ^</a></div>
+<h2 class="sectionTitle expanded" id="test_credits"><i class="icon-collapse-alt"></i> Test Credits</h2>
+<div class="sectionContent">
+<h3>UGRD</h3>
+<table>
+<tbody><tr class="odd">
+<th align="left" width="27%">Test Credit</th>
+<th align="left" width="25%">Term Credits Applied</th>
+<th align="right" width="10%">Units<br>Earned</th>
+</tr>
+<tr valign="top" class="even">
+<td>Advanced Placement</td>
+<td>Fall Quarter 2022</td>
+<td align="right">113</td>
+</tr>
+</tbody></table>
+<p></p><h3> Any letter grades earned for Challenge Exams are viewable by clicking on Test Credits Detail.</h3><p></p>
+</div><!-- end sectionContent-->
+<div class="backNav"><a href="#topH1">Back to Top ^</a></div>
+<h2 class="sectionTitle expanded" id="degrees_conferred">Degrees Conferred</h2>
+<div class="sectionContent">
+<div class="no-results">No information to display.</div>
+</div><!-- end sectionContent-->
+<div class="backNav"><a href="#topH1">Back to Top ^</a></div>
+<h2 class="sectionTitle expanded" id="career_program_plans"><i class="icon-collapse-alt"></i> Career Program Plans</h2>
+<div class="sectionContent">
+<div style="margin-bottom:15px;">
+<div class="float-left" style="width:58%">
+<h3>Undergraduate (Active in Program)</h3><p class="indent-left-10">
+<i>Admitted in Fall Quarter 2022 as a First-Time Freshman</i><br>
+<i>MCA Academic Score: 4700</i><br>
+<i><a href="https://analytics.calpoly.edu/ui/analytics/saw.dll?Dashboard&amp;PortalPath=/shared/Admissions%20MCA/_portal/Admissions%20MCA&amp;Page=Minimum%20Academic%20Scores" target="_blank">View Minimum Scores in PolyData Dashboards</a></i><br>
+</p>
+<p class="indent-left-20">
+<b>Bachelor of Science</b>
+ (2022-2026 Catalog)
+<br>
+Plan: 52CSCBSU<br>
+Major: Computer Science - College of Engineering<br>
+</p>
+</div>
+<div class="float-left rounded-plain" style="width:40%">
+<h3 style="padding:5px; background-color:#f3f3f3; border-bottom: 1px solid #ccc;">Milestones:</h3>
+<p class="margin-left-10" style="margin:4px; padding:4px;">
+<strong>Math &amp; Quantitative Reasoning Placement</strong><br>
+ <span style="font-size:11px">* At the time of Admission</span><br>
+Some or all GE B4 Fulfilled
+</p>
+<p class="margin-left-10" style="margin:4px; padding:4px;">
+<strong>Written/Communication Placement</strong><br>
+ <span style="font-size:11px">* At the time of Admission</span><br>
+GE A2 Fulfilled
+</p>
+<p class="margin-left-10" style="margin:4px; padding:4px;">
+<strong>Math Placement Level</strong><br>
+Eligible for Math 241, 244
+</p>
+<p class="margin-left-10" style="margin:4px; padding:4px;">
+<strong>Graduation Writing Requirement</strong><br>
+Eligible / Required
+</p>
+</div>
+<div class="clear"></div>
+</div>
+</div><!-- end sectionContent-->
+<div class="backNav"><a href="#topH1">Back to Top ^</a></div>
+<h2 class="sectionTitle expanded" id="individualized_change_of_major_agreements_icma">Individualized Change of Major Agreements (ICMA)</h2>
+<div class="sectionContent">
+<div class="no-results">No information to display.</div>
+</div><!-- end sectionContent-->
+<div class="backNav"><a href="#topH1">Back to Top ^</a></div>
+<h2 class="sectionTitle expanded" id="academic_progress"><i class="icon-collapse-alt"></i> Academic Progress</h2>
+<div class="sectionContent">
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["gauge"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ["Label", "Value"],
+          ["", 68.9]
+        ]);
+
+        var options = {
+          width: 170, height: 170,
+          redFrom: 0, 
+          redTo: 45 - .25, 
+          redColor: "#DB4040",
+          yellowFrom: 45 - .25, 
+          yellowTo: 45 + .25, 
+          yellowColor: "#C7CE78",
+          greenFrom: 45 + .25, 
+          greenTo: 100, 
+          greenColor: "#9ABBA6",
+          minorTicks: 0, 
+          majorTicks: ["0.00%", "100%"]
+        };
+
+        var chart = new google.visualization.Gauge(document.getElementById("exp_prog_gauge"));
+
+        chart.draw(data, options);
+      }
+    </script>
+    
+<style>.testing {border:1px solid blue;} table#eapInfo .odd, table#eapInfo .even {background-color:#FFFEFA;}</style>
+<div class="float-left" style="width:180px; padding:5px; padding-right:10px;" id="exp_prog_gauge"><table cellpadding="0" cellspacing="0" align="center" style="border: 0px; padding: 0px; margin: 0px;"><tbody><tr style="border: 0px; padding: 0px; margin: 0px;"><td style="border: 0px; padding: 0px; margin: 0px; width: 170px;"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 170px; height: 170px;"><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="170" height="170" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_0"></defs><g><circle cx="84.5" cy="84.5" r="77" stroke="#333333" stroke-width="1" fill="#cccccc"></circle><circle cx="84.5" cy="84.5" r="68" stroke="#e0e0e0" stroke-width="2" fill="#f7f7f7"></circle><path d="M70.79366619587866,22.596634066375238A64,64,0,0,1,130.25483399593904,130.25483399593904L118.94112549695433,118.94112549695424A48,48,0,0,0,74.345249646909,38.19747554978143Z" stroke="none" stroke-width="0" fill="#9abba6"></path><path d="M69.32740081863373,22.948653238626342A64,64,0,0,1,70.79366619587866,22.596634066375238L74.345249646909,38.19747554978143A48,48,0,0,0,73.2455506139753,38.461489928969755Z" stroke="none" stroke-width="0" fill="#c7ce78"></path><path d="M39.74516600406096,130.25483399593904A64,64,0,0,1,69.32740081863373,22.948653238626342L73.2455506139753,38.461489928969755A48,48,0,0,0,51.05887450304572,118.94112549695429Z" stroke="none" stroke-width="0" fill="#db4040"></path><text text-anchor="start" x="51.97811331858823" y="121.17188668141178" font-family="arial" font-size="9" stroke="none" stroke-width="0" fill="#333333">0.00%</text><text text-anchor="end" x="118.02188668141181" y="121.17188668141173" font-family="arial" font-size="9" stroke="none" stroke-width="0" fill="#333333">100%</text><path stroke="#666666" stroke-width="1" fill-opacity="1" fill="none"></path><path d="M48.79613280324877,121.20386719675125L39.74516600406096,130.25483399593904M121.20386719675128,121.20386719675119L130.2548339959391,130.25483399593898" stroke="#333333" stroke-width="2" fill-opacity="1" fill="none"></path><g><text text-anchor="middle" x="85" y="138.95" font-family="arial" font-size="17" stroke="none" stroke-width="0" fill="#000000">68.9</text><path d="M132.4259973442171,46.63628308015096C87.81753199673645,88.48308964101791,71.63673403869404,98.69089927095375,70.22796804032582,96.94935445044479C68.8192020419576,95.20780962993582,82.18246800326355,81.51691035898209,132.4259973442171,46.63628308015096" stroke="#c63310" stroke-width="1" fill-opacity="0.7" fill="#dc3912"></path><circle cx="84.5" cy="84.5" r="10" stroke="#666666" stroke-width="1" fill="#4684ee"></circle></g></g></svg></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 180px; left: 180px; white-space: nowrap; font-family: Arial; font-size: 8px;">-._.-*^*-._.-*^*-._.-</div></div></td></tr></tbody></table></div>
+<div class="float-left" style="width:415px;"><p>Your Academic Progress is based on your course requirements only.</p>
+<table id="eapInfo"><tbody><tr style="background-color:none;" class="odd"><td><strong>Expected</strong> Academic Progress (EAP):</td><td> <span style="font-size:1.2em; font-weight:bold;">45%</span></td></tr>
+<tr style="background-color:none;" class="even"><td><strong>Actual</strong> Academic Progress:</td><td> <span style="font-size:1.2em; font-weight:bold;">68.9%</span></td></tr>
+<tr style="background-color:none;" class="odd"><td>Academic Progress:</td><td><strong style="font-size:1.2em; color:green;">ON TRACK</strong></td></tr>
+<tr style="background-color:none;" class="even"><td>Academic Standing:</td><td><strong style="font-size:1.2em; color:green;">GOOD</strong></td></tr></tbody></table>
+<div style="padding:5px; font-size:.8em; font-style:italic; border-top:1px dotted gray">Data last analyzed on 04/19/2024.<br>The gauge will be updated again by the end of the 4th week in  Fall Quarter 2024.</div><p><a href="https://polydata.calpoly.edu/content/expected-academic-progress-faq">Frequently Asked Questions</a></p></div>
+<div class="clear"></div>
+</div><!-- end sectionContent-->
+<div class="backNav"><a href="#topH1">Back to Top ^</a></div>
+<h2 class="sectionTitle expanded" id="enrollment_summary_unofficial"><i class="icon-collapse-alt"></i> Enrollment Summary (Unofficial)</h2>
+<div class="sectionContent">
+<h3>UGRD</h3>
+<table>
+<tbody><tr class="odd">
+<th align="left" width="26%">Term</th>
+<th align="right" width="10%">Units<br>Att</th>
+<th align="right" width="10%">Units<br>Earned</th>
+<th align="right" width="10%">Units<br>Graded</th>
+<th align="right" width="10%">Grade<br>Points</th>
+<th align="right" width="8%">GPA</th>
+<th align="right" width="10%">Points<br>Deficient</th>
+<th align="center" width="8%">Acad<br>Stnd</th>
+<th align="center" width="8%">Dean's List</th>
+</tr>
+<tr valign="top" class="even">
+<td><a href="#UGRD-2228">Fall Quarter 2022</a></td>
+<td align="right">16.00</td>
+<td align="right">16.00</td>
+<td align="right">16.00</td>
+<td align="right">57.20</td>
+<td align="right">3.575</td>
+<td align="right"></td>
+<td align="center"></td>
+<td align="center">Y</td>
+</tr>
+<tr valign="top" class="odd">
+<td><a href="#UGRD-2232">Winter Quarter 2023</a></td>
+<td align="right">16.00</td>
+<td align="right">16.00</td>
+<td align="right">16.00</td>
+<td align="right">56.00</td>
+<td align="right">3.500</td>
+<td align="right"></td>
+<td align="center"></td>
+<td align="center">Y</td>
+</tr>
+<tr valign="top" class="even">
+<td><a href="#UGRD-2234">Spring Quarter 2023</a></td>
+<td align="right">12.00</td>
+<td align="right">12.00</td>
+<td align="right">12.00</td>
+<td align="right">42.40</td>
+<td align="right">3.533</td>
+<td align="right"></td>
+<td align="center"></td>
+<td align="center">Y</td>
+</tr>
+<tr valign="top" class="odd">
+<td><a href="#UGRD-2238">Fall Quarter 2023</a></td>
+<td align="right">12.00</td>
+<td align="right">12.00</td>
+<td align="right">12.00</td>
+<td align="right">48.00</td>
+<td align="right">4.000</td>
+<td align="right"></td>
+<td align="center"></td>
+<td align="center">Y</td>
+</tr>
+<tr valign="top" class="even">
+<td><a href="#UGRD-2242">Winter Quarter 2024</a></td>
+<td align="right">16.00</td>
+<td align="right">16.00</td>
+<td align="right">16.00</td>
+<td align="right">64.00</td>
+<td align="right">4.000</td>
+<td align="right"></td>
+<td align="center"></td>
+<td align="center">Y</td>
+</tr>
+<tr valign="top" class="odd">
+<td><a href="#UGRD-2244">Spring Quarter 2024</a></td>
+<td align="right">16.00</td>
+<td align="right">16.00</td>
+<td align="right">16.00</td>
+<td align="right">62.80</td>
+<td align="right">3.925</td>
+<td align="right"></td>
+<td align="center"></td>
+<td align="center">Y</td>
+</tr>
+<tr valign="top" class="even">
+<td><a href="#UGRD-2248">Fall Quarter 2024</a></td>
+<td align="right">16.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">0.000</td>
+<td align="right"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr valign="top" class="odd">
+<td><b>CPSLO Cumulative:</b></td>
+<td align="right">88.00</td>
+<td align="right">88.00</td>
+<td align="right">88.00</td>
+<td align="right">330.40</td>
+<td align="right">3.755</td>
+<td align="center" rowspan="2" colspan="3" valign="middle"><i>Through the end of<br>Spring Quarter 2024</i></td>
+</tr>
+<tr valign="top" class="row-shaded even">
+<td><b>Higher Ed Cumulative:</b></td>
+<td align="right">98.50</td>
+<td align="right">211.50</td>
+<td align="right">98.50</td>
+<td align="right">371.05</td>
+<td align="right">3.767</td>
+</tr>
+<tr class="odd">
+<td align="center" colspan="9"><a href="https://myportal.calpoly.edu/p/gpa-calculator.ctf3/max/render.uP" target="_blank">GPA Calculator</a></td>
+</tr>
+</tbody></table>
+</div><!-- end sectionContent-->
+<div class="backNav"><a href="#topH1">Back to Top ^</a></div>
+<h2 class="sectionTitle expanded" id="enrollment_history_unofficial"><i class="icon-collapse-alt"></i> Enrollment History (Unofficial)</h2>
+<div class="sectionContent">
+<a name="UGRD-2228"></a>
+<h3 class="margin-top-20">Fall Quarter 2022</h3>
+<h4>UGRD, Junior</h4>
+<table>
+<tbody><tr class="even">
+<th align="left" width="17%">Subject</th>
+<th align="left" width="30%">Title</th>
+<th align="right" width="9%">Units<br>Att</th>
+<th align="right" width="9%">Units<br>Earned</th>
+<th align="right" width="9%">Units<br>Graded</th>
+<th align="left" width="9%">Grade</th>
+<th align="right" width="9%">Grade<br>Points</th>
+<th align="right" width="8%">GPA</th>
+</tr><tr valign="top" class="odd">
+<td align="left">CSC-202-03</td>
+<td align="left">Data Structures</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="left" class="bold">B+</td>
+<td align="right">13.20</td>
+<td align="right">&nbsp;</td>
+</tr>
+<tr valign="top" class="even">
+<td align="left">ENGL-145-81</td>
+<td align="left">Writing Arguments</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="left" class="bold">B+</td>
+<td align="right">13.20</td>
+<td align="right">&nbsp;</td>
+</tr>
+<tr valign="top" class="odd">
+<td align="left">ES-112-03</td>
+<td align="left">Race, Culture &amp; Politics in US</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="left" class="bold">A</td>
+<td align="right">16.00</td>
+<td align="right">&nbsp;</td>
+</tr>
+<tr valign="top" class="even">
+<td align="left">MATH-143-09</td>
+<td align="left">Calculus III</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="left" class="bold">A-</td>
+<td align="right">14.80</td>
+<td align="right">&nbsp;</td>
+</tr>
+<tr class="row-shaded odd">
+<td colspan="2" style="text-align:right;"><b>Term Total:</b></td>
+<td align="right">16.00</td>
+<td align="right">16.00</td>
+<td align="right">16.00</td>
+<td>&nbsp;</td>
+<td align="right">57.20</td>
+<td align="right" class="bold">3.575</td>
+</tr>
+<tr class="row-shaded even">
+<td colspan="2" style="text-align:right;"><b>CPSLO Total:</b></td>
+<td align="right">16.00</td>
+<td align="right">16.00</td>
+<td align="right">16.00</td>
+<td>&nbsp;</td>
+<td align="right">57.20</td>
+<td align="right">3.575</td>
+</tr>
+<tr class="row-shaded odd">
+<td colspan="2" style="text-align:right;"><b>Higher Ed Total:</b></td>
+<td align="right">26.50</td>
+<td align="right">139.50</td>
+<td align="right">26.50</td>
+<td>&nbsp;</td>
+<td align="right">97.85</td>
+<td align="right">3.692</td>
+</tr>
+<tr class="even">
+<td align="center" colspan="8"><font color="red"><b>** Dean's List **</b></font></td>
+</tr>
+</tbody></table>
+<a name="UGRD-2232"></a>
+<h3 class="margin-top-20">Winter Quarter 2023</h3>
+<h4>UGRD, Senior</h4>
+<table>
+<tbody><tr class="odd">
+<th align="left" width="17%">Subject</th>
+<th align="left" width="30%">Title</th>
+<th align="right" width="9%">Units<br>Att</th>
+<th align="right" width="9%">Units<br>Earned</th>
+<th align="right" width="9%">Units<br>Graded</th>
+<th align="left" width="9%">Grade</th>
+<th align="right" width="9%">Grade<br>Points</th>
+<th align="right" width="8%">GPA</th>
+</tr><tr valign="top" class="even">
+<td align="left">COMS-101-40</td>
+<td align="left">Public Speaking</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="left" class="bold">B</td>
+<td align="right">12.00</td>
+<td align="right">&nbsp;</td>
+</tr>
+<tr valign="top" class="odd">
+<td align="left">CPE-225-09</td>
+<td align="left">Intro to Computer Organization</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="left" class="bold">B</td>
+<td align="right">12.00</td>
+<td align="right">&nbsp;</td>
+</tr>
+<tr valign="top" class="even">
+<td align="left">CSC-203-05</td>
+<td align="left">Proj-Based OO Prog and Design</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="left" class="bold">A</td>
+<td align="right">16.00</td>
+<td align="right">&nbsp;</td>
+</tr>
+<tr valign="top" class="odd">
+<td align="left">MATH-244-03</td>
+<td align="left">Linear Analysis I</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="left" class="bold">A</td>
+<td align="right">16.00</td>
+<td align="right">&nbsp;</td>
+</tr>
+<tr class="row-shaded even">
+<td colspan="2" style="text-align:right;"><b>Term Total:</b></td>
+<td align="right">16.00</td>
+<td align="right">16.00</td>
+<td align="right">16.00</td>
+<td>&nbsp;</td>
+<td align="right">56.00</td>
+<td align="right" class="bold">3.500</td>
+</tr>
+<tr class="row-shaded odd">
+<td colspan="2" style="text-align:right;"><b>CPSLO Total:</b></td>
+<td align="right">32.00</td>
+<td align="right">32.00</td>
+<td align="right">32.00</td>
+<td>&nbsp;</td>
+<td align="right">113.20</td>
+<td align="right">3.538</td>
+</tr>
+<tr class="row-shaded even">
+<td colspan="2" style="text-align:right;"><b>Higher Ed Total:</b></td>
+<td align="right">42.50</td>
+<td align="right">155.50</td>
+<td align="right">42.50</td>
+<td>&nbsp;</td>
+<td align="right">153.85</td>
+<td align="right">3.620</td>
+</tr>
+<tr class="odd">
+<td align="center" colspan="8"><font color="red"><b>** Dean's List **</b></font></td>
+</tr>
+</tbody></table>
+<a name="UGRD-2234"></a>
+<h3 class="margin-top-20">Spring Quarter 2023</h3>
+<h4>UGRD, Senior</h4>
+<table>
+<tbody><tr class="even">
+<th align="left" width="17%">Subject</th>
+<th align="left" width="30%">Title</th>
+<th align="right" width="9%">Units<br>Att</th>
+<th align="right" width="9%">Units<br>Earned</th>
+<th align="right" width="9%">Units<br>Graded</th>
+<th align="left" width="9%">Grade</th>
+<th align="right" width="9%">Grade<br>Points</th>
+<th align="right" width="8%">GPA</th>
+</tr><tr valign="top" class="odd">
+<td align="left">CSC-248-06</td>
+<td align="left">Discrete Structures</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="left" class="bold">B+</td>
+<td align="right">13.20</td>
+<td align="right">&nbsp;</td>
+</tr>
+<tr valign="top" class="even">
+<td align="left">CSC-357-03</td>
+<td align="left">Systems Programming</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="left" class="bold">B+</td>
+<td align="right">13.20</td>
+<td align="right">&nbsp;</td>
+</tr>
+<tr valign="top" class="odd">
+<td align="left">ES-253-02</td>
+<td align="left">Intro American Indian Studies</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="left" class="bold">A</td>
+<td align="right">16.00</td>
+<td align="right">&nbsp;</td>
+</tr>
+<tr class="row-shaded even">
+<td colspan="2" style="text-align:right;"><b>Term Total:</b></td>
+<td align="right">12.00</td>
+<td align="right">12.00</td>
+<td align="right">12.00</td>
+<td>&nbsp;</td>
+<td align="right">42.40</td>
+<td align="right" class="bold">3.533</td>
+</tr>
+<tr class="row-shaded odd">
+<td colspan="2" style="text-align:right;"><b>CPSLO Total:</b></td>
+<td align="right">44.00</td>
+<td align="right">44.00</td>
+<td align="right">44.00</td>
+<td>&nbsp;</td>
+<td align="right">155.60</td>
+<td align="right">3.536</td>
+</tr>
+<tr class="row-shaded even">
+<td colspan="2" style="text-align:right;"><b>Higher Ed Total:</b></td>
+<td align="right">54.50</td>
+<td align="right">167.50</td>
+<td align="right">54.50</td>
+<td>&nbsp;</td>
+<td align="right">196.25</td>
+<td align="right">3.601</td>
+</tr>
+<tr class="odd">
+<td align="center" colspan="8"><font color="red"><b>** Dean's List **</b></font></td>
+</tr>
+</tbody></table>
+<a name="UGRD-2238"></a>
+<h3 class="margin-top-20">Fall Quarter 2023</h3>
+<h4>UGRD, Senior</h4>
+<table>
+<tbody><tr class="even">
+<th align="left" width="17%">Subject</th>
+<th align="left" width="30%">Title</th>
+<th align="right" width="9%">Units<br>Att</th>
+<th align="right" width="9%">Units<br>Earned</th>
+<th align="right" width="9%">Units<br>Graded</th>
+<th align="left" width="9%">Grade</th>
+<th align="right" width="9%">Grade<br>Points</th>
+<th align="right" width="8%">GPA</th>
+</tr><tr valign="top" class="odd">
+<td align="left">CSC-307-05</td>
+<td align="left">Intro to Software Engineering</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="left" class="bold">A</td>
+<td align="right">16.00</td>
+<td align="right">&nbsp;</td>
+</tr>
+<tr valign="top" class="even">
+<td align="left">CSC-365-11</td>
+<td align="left">Intro to Database Systems</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="left" class="bold">A</td>
+<td align="right">16.00</td>
+<td align="right">&nbsp;</td>
+</tr>
+<tr valign="top" class="odd">
+<td align="left">PHYS-141-12</td>
+<td align="left">General Physics I</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="left" class="bold">A</td>
+<td align="right">16.00</td>
+<td align="right">&nbsp;</td>
+</tr>
+<tr class="row-shaded even">
+<td colspan="2" style="text-align:right;"><b>Term Total:</b></td>
+<td align="right">12.00</td>
+<td align="right">12.00</td>
+<td align="right">12.00</td>
+<td>&nbsp;</td>
+<td align="right">48.00</td>
+<td align="right" class="bold">4.000</td>
+</tr>
+<tr class="row-shaded odd">
+<td colspan="2" style="text-align:right;"><b>CPSLO Total:</b></td>
+<td align="right">56.00</td>
+<td align="right">56.00</td>
+<td align="right">56.00</td>
+<td>&nbsp;</td>
+<td align="right">203.60</td>
+<td align="right">3.636</td>
+</tr>
+<tr class="row-shaded even">
+<td colspan="2" style="text-align:right;"><b>Higher Ed Total:</b></td>
+<td align="right">66.50</td>
+<td align="right">179.50</td>
+<td align="right">66.50</td>
+<td>&nbsp;</td>
+<td align="right">244.25</td>
+<td align="right">3.673</td>
+</tr>
+<tr class="odd">
+<td align="center" colspan="8"><font color="red"><b>** Dean's List **</b></font></td>
+</tr>
+</tbody></table>
+<a name="UGRD-2242"></a>
+<h3 class="margin-top-20">Winter Quarter 2024</h3>
+<h4>UGRD, Senior</h4>
+<table>
+<tbody><tr class="even">
+<th align="left" width="17%">Subject</th>
+<th align="left" width="30%">Title</th>
+<th align="right" width="9%">Units<br>Att</th>
+<th align="right" width="9%">Units<br>Earned</th>
+<th align="right" width="9%">Units<br>Graded</th>
+<th align="left" width="9%">Grade</th>
+<th align="right" width="9%">Grade<br>Points</th>
+<th align="right" width="8%">GPA</th>
+</tr><tr valign="top" class="odd">
+<td align="left">ART-182-03</td>
+<td align="left">Foundation in Digital Art I</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="left" class="bold">A</td>
+<td align="right">16.00</td>
+<td align="right">&nbsp;</td>
+</tr>
+<tr valign="top" class="even">
+<td align="left">CSC-349-07</td>
+<td align="left">Design &amp; Analysis of Algorithm</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="left" class="bold">A</td>
+<td align="right">16.00</td>
+<td align="right">&nbsp;</td>
+</tr>
+<tr valign="top" class="odd">
+<td align="left">PHIL-230-02</td>
+<td align="left">Philosophy:Knowledge &amp; Reality</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="left" class="bold">A</td>
+<td align="right">16.00</td>
+<td align="right">&nbsp;</td>
+</tr>
+<tr valign="top" class="even">
+<td align="left">PHYS-142-20</td>
+<td align="left">General Physics II</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="left" class="bold">A</td>
+<td align="right">16.00</td>
+<td align="right">&nbsp;</td>
+</tr>
+<tr class="row-shaded odd">
+<td colspan="2" style="text-align:right;"><b>Term Total:</b></td>
+<td align="right">16.00</td>
+<td align="right">16.00</td>
+<td align="right">16.00</td>
+<td>&nbsp;</td>
+<td align="right">64.00</td>
+<td align="right" class="bold">4.000</td>
+</tr>
+<tr class="row-shaded even">
+<td colspan="2" style="text-align:right;"><b>CPSLO Total:</b></td>
+<td align="right">72.00</td>
+<td align="right">72.00</td>
+<td align="right">72.00</td>
+<td>&nbsp;</td>
+<td align="right">267.60</td>
+<td align="right">3.717</td>
+</tr>
+<tr class="row-shaded odd">
+<td colspan="2" style="text-align:right;"><b>Higher Ed Total:</b></td>
+<td align="right">82.50</td>
+<td align="right">195.50</td>
+<td align="right">82.50</td>
+<td>&nbsp;</td>
+<td align="right">308.25</td>
+<td align="right">3.736</td>
+</tr>
+<tr class="even">
+<td align="center" colspan="8"><font color="red"><b>** Dean's List **</b></font></td>
+</tr>
+</tbody></table>
+<a name="UGRD-2244"></a>
+<h3 class="margin-top-20">Spring Quarter 2024</h3>
+<h4>UGRD, Senior</h4>
+<table>
+<tbody><tr class="odd">
+<th align="left" width="17%">Subject</th>
+<th align="left" width="30%">Title</th>
+<th align="right" width="9%">Units<br>Att</th>
+<th align="right" width="9%">Units<br>Earned</th>
+<th align="right" width="9%">Units<br>Graded</th>
+<th align="left" width="9%">Grade</th>
+<th align="right" width="9%">Grade<br>Points</th>
+<th align="right" width="8%">GPA</th>
+</tr><tr valign="top" class="even">
+<td align="left">BOT-121-01</td>
+<td align="left">General Botany</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="left" class="bold">A</td>
+<td align="right">16.00</td>
+<td align="right">&nbsp;</td>
+</tr>
+<tr valign="top" class="odd">
+<td align="left">CSC-430-03</td>
+<td align="left">Programming Languages</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="left" class="bold">A-</td>
+<td align="right">14.80</td>
+<td align="right">&nbsp;</td>
+</tr>
+<tr valign="top" class="even">
+<td align="left">PHYS-143-37</td>
+<td align="left">General Physics III</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="left" class="bold">A</td>
+<td align="right">16.00</td>
+<td align="right">&nbsp;</td>
+</tr>
+<tr valign="top" class="odd">
+<td align="left">RELS-301-01</td>
+<td align="left">Religions of Asia</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="left" class="bold">A</td>
+<td align="right">16.00</td>
+<td align="right">&nbsp;</td>
+</tr>
+<tr class="row-shaded even">
+<td colspan="2" style="text-align:right;"><b>Term Total:</b></td>
+<td align="right">16.00</td>
+<td align="right">16.00</td>
+<td align="right">16.00</td>
+<td>&nbsp;</td>
+<td align="right">62.80</td>
+<td align="right" class="bold">3.925</td>
+</tr>
+<tr class="row-shaded odd">
+<td colspan="2" style="text-align:right;"><b>CPSLO Total:</b></td>
+<td align="right">88.00</td>
+<td align="right">88.00</td>
+<td align="right">88.00</td>
+<td>&nbsp;</td>
+<td align="right">330.40</td>
+<td align="right">3.755</td>
+</tr>
+<tr class="row-shaded even">
+<td colspan="2" style="text-align:right;"><b>Higher Ed Total:</b></td>
+<td align="right">98.50</td>
+<td align="right">211.50</td>
+<td align="right">98.50</td>
+<td>&nbsp;</td>
+<td align="right">371.05</td>
+<td align="right">3.767</td>
+</tr>
+<tr class="odd">
+<td align="center" colspan="8"><font color="red"><b>** Dean's List **</b></font></td>
+</tr>
+</tbody></table>
+<a name="UGRD-2248"></a>
+<h3 class="margin-top-20">Fall Quarter 2024</h3>
+<h4>UGRD, Senior</h4>
+<table>
+<tbody><tr class="even">
+<th align="left" width="17%">Subject</th>
+<th align="left" width="30%">Title</th>
+<th align="right" width="9%">Units<br>Att</th>
+<th align="right" width="9%">Units<br>Earned</th>
+<th align="right" width="9%">Units<br>Graded</th>
+<th align="left" width="9%">Grade</th>
+<th align="right" width="9%">Grade<br>Points</th>
+<th align="right" width="8%">GPA</th>
+</tr><tr valign="top" class="odd">
+<td align="left">CSC-321-05</td>
+<td align="left">Intro to Computer Security</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="left" class="bold"></td>
+<td align="right">0.00</td>
+<td align="right">&nbsp;</td>
+</tr>
+<tr valign="top" class="even">
+<td align="left">CSC-484-01</td>
+<td align="left">User-Centrd Interface Dsgn/Dev</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="left" class="bold"></td>
+<td align="right">0.00</td>
+<td align="right">&nbsp;</td>
+</tr>
+<tr valign="top" class="odd">
+<td align="left">MATH-241-12</td>
+<td align="left">Calculus IV</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="left" class="bold"></td>
+<td align="right">0.00</td>
+<td align="right">&nbsp;</td>
+</tr>
+<tr valign="top" class="even">
+<td align="left">PHIL-323-80</td>
+<td align="left">Ethics, Science and Technology</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="right">4.00</td>
+<td align="left" class="bold"></td>
+<td align="right">0.00</td>
+<td align="right">&nbsp;</td>
+</tr>
+<tr class="row-shaded odd">
+<td colspan="2" style="text-align:right;"><b>Term Total:</b></td>
+<td align="right">16.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td>&nbsp;</td>
+<td align="right">0.00</td>
+<td align="right" class="bold">0.000</td>
+</tr>
+<tr class="row-shaded even">
+<td colspan="2" style="text-align:right;"><b>CPSLO Total:</b></td>
+<td align="right">104.00</td>
+<td align="right">88.00</td>
+<td align="right">88.00</td>
+<td>&nbsp;</td>
+<td align="right">330.40</td>
+<td align="right">3.755</td>
+</tr>
+<tr class="row-shaded odd">
+<td colspan="2" style="text-align:right;"><b>Higher Ed Total:</b></td>
+<td align="right">114.50</td>
+<td align="right">211.50</td>
+<td align="right">98.50</td>
+<td>&nbsp;</td>
+<td align="right">371.05</td>
+<td align="right">3.767</td>
+</tr>
+</tbody></table>
+</div><!-- end sectionContent-->
+<div class="backNav"><a href="#topH1">Back to Top ^</a></div>
+<h2 class="sectionTitle expanded" id="planned_courses"><i class="icon-collapse-alt"></i> Planned Courses</h2>
+<div class="sectionContent">
+<div style="padding:5px; font-size:.8em; font-style:italic;">Plan last accessed on 03-APR-24</div>
+<div class="rounded-plain">
+<h3 style="padding:5px; background-color:#f3f3f3; border-bottom: 1px solid #ccc;">Degree Planner Compliance Status - Fall Quarter 2024 Registration</h3>
+<p class="margin-left-10" style="margin:4px; padding:4px;">
+<i class="fa fa-check" style="color: #036228;"></i>
+<strong>COMPLIANT</strong>
+ : Login Requirement<br>
+</p>
+<p class="margin-left-10" style="margin:4px; padding:4px;">
+Required window: 01/19/2024 - 04/11/2024<br>
+<i>Last login: 
+04/03/2024
+</i></p>
+<p class="margin-left-10" style="margin:4px; padding:4px;">
+</p>
+<p class="margin-left-10" style="margin:4px; padding:4px;">
+* Above data refreshes nightly, until 04/11/2024</p>
+<p class="margin-left-10" style="margin:4px; padding:4px;">
+<a href="https://registrar.calpoly.edu/degreeplanner/FAQ" target="_blank">Degree Planner FAQs</a></p>
+<p class="margin-left-10" style="margin:4px; padding:4px;">
+</p></div>
+<h3 class="expandTrigger margin-top-20"><i class="icon-collapse-alt"></i> Fall Quarter 2024 (1 Courses)</h3>
+<div class="expandContent indent-left-20">
+<h4 class="expandTrigger" style="color:#000;"><i class="icon-expand-alt"></i> CPE 471. Introduction to Computer Graphics.</h4>
+<p class="expandContent collapsed" style="padding: 0px 0px 15px 15px; border-bottom: 1px dotted rgb(204, 204, 204); display: none;">
+<span style="display: inline-block; float:right; font-weight:bold;">4 units</span>
+Prerequisite: CPE/CSC 357.
+<br>
+<br>
+Graphics software development and use of application programming interfaces for 3D graphics.  The graphics pipeline, modeling, geometric and viewing transforms, lighting and shading, rendering, interaction techniques and graphics hardware.  3 lectures, 1 laboratory.  Crosslisted as CPE/CSC 471.
+</p>
+</div>
+<h3 class="expandTrigger margin-top-20"><i class="icon-collapse-alt"></i> Winter Quarter 2025 (3 Courses)</h3>
+<div class="expandContent indent-left-20">
+<h4 class="expandTrigger" style="color:#000;"><i class="icon-expand-alt"></i> CSC 445. Theory of Computation I.</h4>
+<p class="expandContent collapsed" style="padding: 0px 0px 15px 15px; border-bottom: 1px dotted rgb(204, 204, 204); display: none;">
+<span style="display: inline-block; float:right; font-weight:bold;">4 units</span>
+Prerequisite: CSC 248 or CSC 348.
+<br>
+<br>
+Theory of formal languages and automata.  Turing machines.  Chomsky hierarchy.  Theory of decidability and computability.  4 lectures.
+</p>
+<h4 class="expandTrigger" style="color:#000;"><i class="icon-expand-alt"></i> ES 351. Gender, Race, Class, Nation in Global Engineering, Technology &amp; I.</h4>
+<p class="expandContent collapsed" style="padding: 0px 0px 15px 15px; border-bottom: 1px dotted rgb(204, 204, 204); display: none;">
+<span style="display: inline-block; float:right; font-weight:bold;">4 units</span>
+GE Area DU GE 2020; GE Area GE D5
+<br>
+<br>
+Prerequisite: Junior standing; completion of GE Area A with grades of C- or better; one course in GE Area B4 with a grade of C- or better (GE Area B1 for students on the 2019-20 or earlier catalogs); and one lower-division course in GE Area D.
+<br>
+<br>
+Cross-cultural exploration of the intersections of gender, race, class, nation in the global engineering workforce, small- and large-scale technological systems, and international development programs; special attention to 21st century challenges and efforts to create more socially responsible engineering and technology.  Course may be offered in classroom-based, online, or hybrid format.  4 lectures.  Crosslisted as ES/WGQS 351.  Fulfills GE Upper-Division D (GE Area D5 for students on the 2019-20 or earlier catalogs).  Formerly WGS 351.
+</p>
+<h4 class="expandTrigger" style="color:#000;"><i class="icon-expand-alt"></i> STAT 312. Statistical Methods for Engineers.</h4>
+<p class="expandContent collapsed" style="padding: 0px 0px 15px 15px; border-bottom: 1px dotted rgb(204, 204, 204); display: none;">
+<span style="display: inline-block; float:right; font-weight:bold;">4 units</span>
+GE Area BU GE 2020; GE Area GE B7
+<br>
+<br>
+Prerequisite: Junior standing or one of the following majors: CPE, CSC, EE, GENE, IE, MATE, MFGE, or SE; completion of GE Area A with grades of C- or better; and one course in GE Area B4 with a grade of C- or better (GE Area B1 for students on the 2019-20 or earlier catalogs); and MATH 142.
+<br>
+<br>
+Descriptive and graphical methods.  Discrete and continuous probability distributions.  One and two sample confidence intervals and hypothesis testing.  Single factor analysis of variance.  Quality control.  Introduction to regression and to experimental design.  Substantial use of statistical software.  Not open to students with credit in STAT 252 or STAT 302.  Course may be offered in classroom-based, online, or hybrid format.  4 lectures.  Fulfills GE Area Upper-Division B (GE Areas B5, B6, or B7 for students on the 2019-20 catalog).
+</p>
+</div>
+<h3 class="expandTrigger margin-top-20"><i class="icon-collapse-alt"></i> Spring Quarter 2025 (2 Courses)</h3>
+<div class="expandContent indent-left-20">
+<h4 class="expandTrigger" style="color:#000;"><i class="icon-expand-alt"></i> ART 101. Fundamentals of Drawing.</h4>
+<p class="expandContent collapsed" style="padding: 0px 0px 15px 15px; border-bottom: 1px dotted rgb(204, 204, 204); display: none;">
+<span style="display: inline-block; float:right; font-weight:bold;">4 units</span>
+GE Area C1 GE 2020; GE Area GE C3
+<br>
+<br>
+Introduction to the artistic practice and cultural value of drawing with emphasis on the practical skills of observation, rendering, and understanding meaning in visual art. Projects encourage growth in technical skill, conceptual innovation, critical thinking, and visual communication. Course may be offered in classroom-based or online format. 3 lectures, 1 laboratory. Fulfills GE Area C1 (GE Area C3 for students on the 2019-20 or earlier catalogs).
+</p>
+<h4 class="expandTrigger" style="color:#000;"><i class="icon-expand-alt"></i> CSC 364. Introduction to Networked, Distributed, and Parallel Computing.</h4>
+<p class="expandContent collapsed" style="padding: 0px 0px 15px 15px; border-bottom: 1px dotted rgb(204, 204, 204); display: none;">
+<span style="display: inline-block; float:right; font-weight:bold;">4 units</span>
+Prerequisite: CPE/CSC 203.
+<br>
+<br>
+Multisystem/multiprocessor coordination and computing.  Networking:  OSI stack, routing, link layer, mobile, wireless, and applications.  Distributed and Parallel Computing:  parallelism, concurrency, coordination, shared memory, messaging, task and data decomposition, and design and implementation challenges.  3 lectures, 1 laboratory.
+</p>
+</div>
+<h3 class="expandTrigger margin-top-20"><i class="icon-collapse-alt"></i> Fall Quarter 2025 (1 Courses)</h3>
+<div class="expandContent indent-left-20">
+<h4 class="expandTrigger" style="color:#000;"><i class="icon-expand-alt"></i> CSC 491. Senior Project I.</h4>
+<p class="expandContent collapsed" style="padding: 0px 0px 15px 15px; border-bottom: 1px dotted rgb(204, 204, 204); display: none;">
+<span style="display: inline-block; float:right; font-weight:bold;">2 units</span>
+Prerequisite: CSC 307 or CSC 309; and consent of instructor.
+<br>
+<br>
+Selection and completion of a project by individuals or team which is typical of problems which graduates must solve in their fields of employment.  Project may include students from other disciplines.  Formulation of outline, literature review, and project schedule.
+</p>
+</div>
+<h3 class="expandTrigger margin-top-20"><i class="icon-collapse-alt"></i> Winter Quarter 2026 (1 Courses)</h3>
+<div class="expandContent indent-left-20">
+<h4 class="expandTrigger" style="color:#000;"><i class="icon-expand-alt"></i> CSC 492. Senior Project II.</h4>
+<p class="expandContent collapsed" style="padding: 0px 0px 15px 15px; border-bottom: 1px dotted rgb(204, 204, 204); display: none;">
+<span style="display: inline-block; float:right; font-weight:bold;">2 units</span>
+Prerequisite: CSC 491 and consent of instructor.
+<br>
+<br>
+Selection and completion of a project by individuals or team which is typical of problems which graduates must solve in their fields of employment.  Project may include students from other disciplines.  Project results are presented in a formal report.
+</p>
+</div>
+<div style="padding:5px; font-size:.8em; font-style:italic; border-top:1px dotted gray">Data last refreshed from Degree Planner on 13-SEP-24.</div>
+</div><!-- end sectionContent-->
+<div class="backNav"><a href="#topH1">Back to Top ^</a></div>
+<div id="full_disclaimer"></div>
+<div class="warningBox"><strong>PERSONAL AND CONFIDENTIAL STUDENT DATA:</strong><p>The data contained in this report is the property of California Polytechnic State University, San Luis Obispo (Cal Poly) and may not be shared without the express consent of the student.</p><p>By viewing this report, the user acknowledges the sensitive and private nature of the data contained in this report and agrees to abide by Cal Poly's Security and Confidentiality Policy. Without written student authorization, this data may only be used for official university business.</p><p>The report is intended for the requested purposes only.</p>
+</div>
+<div class="no-results float-right margin-top-10">Printed by: jhagen@calpoly.edu on 09/14/2024 10:04 pm</div>
+<!-- End of Content -->
+
+    </div><!-- #mainLeft -->
+    <div id="mainLeftFull">
+    <!-- Not sure what can go here --> 
+    </div><!--#mainLeftFull-->
+    </div><!-- #content-->
+    <div class="clear"></div>
+    <div id="footer">
+    
+
+    <ul id="footer_links">
+      <li><a href="https://www.calpoly.edu">CP Home</a></li> 
+      <li><a href="https://myportal.calpoly.edu/s/directory">Directory</a></li> 
+      <li><a href="https://maps.calpoly.edu">Campus Maps &amp; Directions</a></li> 
+      <li><a href="https://www.bkstr.com/calpolystore">University Store</a></li> 
+      <li><a href="https://registrar.calpoly.edu/acad_cal/">Calendar</a></li> 
+      <li><a href="https://afd.calpoly.edu/hr/job-opportunities/">Employment</a></li> 
+      <li><a href="https://policy.calpoly.edu/">Campus Policies</a></li> 
+      <li><a href="https://www.calpoly.edu/contact/">Contact Us</a></li>
+      <li id="footerLogo"><a href="https://www.calpoly.edu/"><img src="/cpwebtemplate/5.0.1/common/images_html/footer/footer_logo.png" height="24" width="138" alt="Cal Poly" title="Go to Cal Poly Home"></a></li>    
+    </ul>
+    
+<ul id="footer_help">
+<li><a href="https://get.adobe.com/reader/">Get Adobe Reader</a></li>
+<li><a href="https://registrar.calpoly.edu/Contact_Information">Need help?</a></li>
+</ul>
+
+    <div id="footer_deptinfo">
+    <p>
+          © 2024 - Office of the Registrar | California Polytechnic State University<br>
+      San Luis Obispo, California 93407 | Phone: 805.756.2531
+    </p>
+    </div><!-- #footer_deptinfo -->
+    </div><!-- #footer -->
+    <div class="clear"></div>
+    </div><!-- #wrapper -->
+    
+<!-- Load any necessary javascript -->
+
+    <script src="/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="/jquery/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="/common/templates/edge/scripts/custom.js" type="text/javascript"></script>
+    
+    
+    
+</body></html>
